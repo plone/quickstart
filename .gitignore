@@ -4,6 +4,7 @@
 .Python
 .doctrees
 .vagrant
+.vscode/
 *.sublime-project
 *.sublime-workspace
 _build/
