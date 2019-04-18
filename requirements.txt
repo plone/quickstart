@@ -1,0 +1,8 @@
+alabaster
+jsx-lexer
+Sphinx
+sphinx-rtd-theme
+sphinxcontrib-spelling
+sphinxcontrib-websupport
+transifex-client
+polib
