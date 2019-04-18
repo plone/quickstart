@@ -75,3 +75,4 @@ more
 -  add a PCP configlet for your own CT (talk submission enabled)
 -  adjust an plone setting and where to find them (like enable self_reg
    in chapter user generated content)
+-  add a endpoint
