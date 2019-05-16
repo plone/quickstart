@@ -10,18 +10,17 @@ What is Plone?
 https://training.plone.org/5/mastering-plone/what_is_plone.html
 
 
-what we’ll create
+What we’ll create
 -----------------
 
 -  explain the case study for the project (conference site)
-
-
+- Shorter than https://training.plone.org/5/mastering-plone/case.html
 
 installation
 ------------
 
 -  system-requirements
--  should we use the unified installer or the package-buildout created by plonecli?
+-  use the package-buildout created by plonecli?
 
 
 
@@ -30,11 +29,15 @@ creating an add-on for plone
 
 ::
 
-   - pip install plonecli
-   - plonecli create addon
-   - cd addon
+   $ python3.7 -m venv quickstart
+   $ cd quickstart
+   $ source bin/activate
+   $ pip install plonecli
+   $ plonecli create addon ploneconf.site
+   $ cd ploneconf.site
+   $ pip install -r requirements
+   $ ./bin/buildout
 
--  run buildout
 -  start instance
 -  create plone site
 -  install package
@@ -42,6 +45,8 @@ creating an add-on for plone
 
 create a browserview
 --------------------
+
+- https://training.plone.org/5/mastering-plone/views_1.html
 
 - zcml: register a view
 - python: create the view class
@@ -72,7 +77,7 @@ create a view for our content type
 ----------------------------------
 
 - zcml: register view
-- python: write view that returns data from template  as json
+- python: write view that returns data from template
 - pt: write view that displays data from type
 
 
@@ -91,23 +96,36 @@ add a behavior
 -  Maybe: Add a index for that field?
 
 
+Reusing existing addons and code
+--------------------------------
+
+Behaviors
+Event: https://training.plone.org/5/mastering-plone/events.html
+Banner: https://training.plone.org/5/mastering-plone/thirdparty_behaviors.html
+
+Addons:
+collective.easyform: https://training.plone.org/5/mastering-plone/add-ons.html
+
+Code:
+??
+
+
 more
 ----
 
 -  Frontpage-View that shows featured items (for a specific amount of time)
    talks and twitterfeed on homepage
--  view that shows jokes from an api
 -  interacting with content: create, edit, move, publish)
 -  adjust an existing plone ct
+-  view that shows jokes from an api (https://training.plone.org/5/mastering-plone/api.html?highlight=joke#exercise)
 -  reuse event summary (plone existing stuff) inside your own views
 -  add a js and css file via the resource registry
 -  add a PCP configlet for your own CT (talk submission enabled)
 -  adjust an plone setting and where to find them (like enable self_reg
    in chapter user generated content)
--  add a endpoint? Good usecase needed since most things can be done with existing endpoints.
+-  Relations
 
-
-Parts from Mastering-Plone that we should use:
+Parts from Mastering-Plone that we could use as a base:
 
 - https://training.plone.org/5/mastering-plone/dexterity_3.html
 - https://training.plone.org/5/mastering-plone/views_1.html
@@ -115,4 +133,5 @@ Parts from Mastering-Plone that we should use:
 - https://training.plone.org/5/mastering-plone/views_3.html
 - https://training.plone.org/5/mastering-plone/behaviors_1.html
 - https://training.plone.org/5/mastering-plone/api.html
-- https://training.plone.org/5/mastering-plone/events.html
+- https://training.plone.org/5/mastering-plone/relations.html
+- https://training.plone.org/5/mastering-plone/frontpage.html
