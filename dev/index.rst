@@ -1,10 +1,9 @@
-
 ==========================
 Developer Quickstart Guide
 ==========================
 
 
-What is Plone?
+What is Plone? 
 --------------
 
 https://training.plone.org/5/mastering-plone/what_is_plone.html
@@ -23,24 +22,11 @@ installation
 -  use the package-buildout created by plonecli?
 
 
+Creating an addon for Plone
+---------------------------
 
-creating an add-on for plone
-----------------------------
+- :doc:`addon`
 
-::
-
-   $ python3.7 -m venv quickstart
-   $ cd quickstart
-   $ source bin/activate
-   $ pip install plonecli
-   $ plonecli create addon ploneconf.site
-   $ cd ploneconf.site
-   $ pip install -r requirements
-   $ ./bin/buildout
-
--  start instance
--  create plone site
--  install package
 
 
 create a browserview

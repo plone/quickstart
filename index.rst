@@ -9,3 +9,4 @@ Getting started with Plone Development.
     :caption: Overview
 
     dev/index
+    dev/addon
