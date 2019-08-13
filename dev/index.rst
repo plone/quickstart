@@ -1,115 +1,18 @@
-==========================
-Developer Quickstart Guide
-==========================
+===================================
+Index of Developer Quickstart Guide
+===================================
 
-
-What is Plone? 
---------------
-
-https://training.plone.org/5/mastering-plone/what_is_plone.html
-
-
-What we’ll create
------------------
-
--  explain the case study for the project (conference site)
-- Shorter than https://training.plone.org/5/mastering-plone/case.html
-
-installation
-------------
-
--  system-requirements
--  use the package-buildout created by plonecli?
-
-
-Creating an addon for Plone
----------------------------
-
+- :doc:`what_is_plone`
+- :doc:`case`
+- :doc:`installation`
 - :doc:`addon`
+- :doc:`view_basic`
+- :doc:`view_content_type`
+- :doc:`view_list`
+- :doc:`behavior`
+- :doc:`reuse`
+- :doc:`more`
 
-
-
-create a browserview
---------------------
-
-- https://training.plone.org/5/mastering-plone/views_1.html
-
-- zcml: register a view
-- python: create the view class
-
-Return "Hello World" in Python
-
-- pt: create the template generate html
-
-
-
-
-creating a content type with dexterity
---------------------------------------
-
--  what is a content type?
--  create a talk content type
--  from inside our addon: ``plonecli add content_type``
--  run buildout
--  restart and install package
--  add fields with zope schema
-
-   -  simple schema first
-   -  then: custom widget, field-permissions and fieldset
-   -  simple vocabularies
-
-
-create a view for our content type
-----------------------------------
-
-- zcml: register view
-- python: write view that returns data from template
-- pt: write view that displays data from type
-
-
-create a browserview to list the talks
---------------------------------------
-
--  query of all ‘talks’ ct and show them as a list in a view
--  use plone.api to query the catalog for talks
-
-
-add a behavior
---------------
-
--  reusable field for plone ct’s and talk ct
--  ``featured``: "Show on front page"
--  Maybe: Add a index for that field?
-
-
-Reusing existing addons and code
---------------------------------
-
-Behaviors
-Event: https://training.plone.org/5/mastering-plone/events.html
-Banner: https://training.plone.org/5/mastering-plone/thirdparty_behaviors.html
-
-Addons:
-collective.easyform: https://training.plone.org/5/mastering-plone/add-ons.html
-
-Code:
-??
-
-
-more
-----
-
--  Frontpage-View that shows featured items (for a specific amount of time)
-   talks and twitterfeed on homepage
--  interacting with content: create, edit, move, publish)
--  adjust an existing plone ct
--  view that shows jokes from an api (https://training.plone.org/5/mastering-plone/api.html?highlight=joke#exercise)
--  reuse event summary (plone existing stuff) inside your own views
--  add a js and css file via the resource registry
--  add a PCP configlet for your own CT (talk submission enabled)
--  adjust an plone setting and where to find them (like enable self_reg
-   in chapter user generated content)
--  Relations
 
 Parts from Mastering-Plone that we could use as a base:
 
