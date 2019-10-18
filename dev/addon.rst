@@ -1,17 +1,33 @@
 Creating an add-on for plone
 ----------------------------
 
+- install plonecli and create an addon with it
+
 ::
 
-   $ python3.7 -m venv quickstart
-   $ cd quickstart
-   $ source bin/activate
-   $ pip install plonecli
-   $ plonecli create addon ploneconf.quickstart
-   $ cd ploneconf.quickstart
-   $ pip install -r requirements.txt
-   $ ./bin/buildout
+   mkdir quickstart
+   cd quickstart
+   python3 -m venv .
+   source bin/activate
+   pip install plonecli
+   plonecli create addon ploneconf.quickstart
+     - answer all questions
+   deactivate
+
+- inside the addon install the requirements
+   
+::
+
+   cd ploneconf.quickstart
+   python3 -m venv .
+   ./bin/pip install -r requirements.txt
+   ./bin/buildout
 
 -  start instance
+
+::
+
+   ./bin/instance
+      
 -  create plone site
--  install package
+-  install ploneconf.quickstart package
