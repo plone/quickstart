@@ -16,4 +16,4 @@ Requirements
 * As an organizer I want to see a list of all proposed talks.
 
 .. seealso::
-    https://training.plone.org/5/mastering-plone/case.html
+    https://training.plone.org/mastering-plone/case.html

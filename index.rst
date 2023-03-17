@@ -11,7 +11,7 @@ a basic introduction to the best practices of Plone development.
 ..  note::
 
     If you would like to learn more about all the features of Plone or want some more advanced training, please refer to the
-    `Mastering Plone Training <https://training.plone.org/5/mastering-plone/>`_.
+    `Mastering Plone Training <https://training.plone.org/mastering-plone/>`_.
 
 ..  toctree::
     :maxdepth: 2
