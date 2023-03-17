@@ -33,7 +33,7 @@ Core concepts
 - Schema-driven content
 - Component Architecture
 
-For a more detailed explanation of these core concepts, see https://training.plone.org/5/mastering-plone/what_is_plone.html#core-concepts
+For a more detailed explanation of these core concepts, see https://training.plone.org/mastering-plone/what_is_plone.html#core-concepts
 
 .. seealso::
 
